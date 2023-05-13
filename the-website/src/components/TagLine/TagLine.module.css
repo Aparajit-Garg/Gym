@@ -1,0 +1,22 @@
+
+.tag__line {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+span {
+    text-transform: uppercase;
+}
+
+
+span h2 {
+    display: inline;
+}
+
+.transparent__text {
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+    font-family: Arial,Helvetica,sans-serif;
+}

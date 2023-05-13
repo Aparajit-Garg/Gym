@@ -1,0 +1,28 @@
+
+.__ad {
+    align-items: center;
+    text-transform: uppercase;
+    width: fit-content;
+    display: flex;
+    justify-content: flex-start;
+    background-color: #393d42;
+    border-radius: 4rem;
+    color: white;
+    margin-top: 4rem;
+    padding: 20px 13px;
+    position: relative;
+}
+
+.__ad > div {
+    height: 80%;
+    background-color: #f48916;
+    z-index: 1;
+    border-radius: 3rem;
+    width: 5.4rem;
+    position: absolute;
+}
+
+.__ad > span {
+    z-index: 2;
+}
+
