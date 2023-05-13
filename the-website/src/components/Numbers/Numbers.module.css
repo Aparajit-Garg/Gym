@@ -1,0 +1,18 @@
+.main {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    color: white;
+}
+
+.main > span div {
+    font-size: 2em;
+}
+
+.text__section {
+    color: #9c9c9c;
+    /* TODO change the color from hard coded to var value */
+    /* color: var(--gray); */
+    font-size: 1em;
+    text-transform: uppercase;
+}

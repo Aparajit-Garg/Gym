@@ -1,0 +1,17 @@
+div > button {
+    /* TODO: var not working */
+    /* border: 1px solid var(--orange); */
+    border: 2px solid orange;
+    text-decoration: none;
+    gap: 1rem;
+    width: 7rem;
+    height: 2.5rem;
+    font-weight: 600;
+    background-color: transparent;
+    color: white;
+}
+
+.get__started {
+    margin-right: 2rem;
+    background-color: orange;
+}

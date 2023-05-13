@@ -3,6 +3,8 @@ import classes from "./TopDisplaySection.module.css";
 import NavBar from '../NavBar/NavBar';
 import Ad from "../Ad/Ad";
 import TagLine from "../TagLine/TagLine";
+import Numbers from '../Numbers/Numbers';
+import Buttons from '../Buttons/Buttons';
 
 const TopDisplaySection = () => {
   return (
@@ -11,6 +13,8 @@ const TopDisplaySection = () => {
             <NavBar />
             <Ad />
             <TagLine />
+            <Numbers />
+            <Buttons />
         </div>
         <div className={classes.right__side}>
             <h1>Hi</h1>
