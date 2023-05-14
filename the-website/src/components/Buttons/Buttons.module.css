@@ -1,4 +1,4 @@
-div > button {
+.buttons > button {
     /* TODO: var not working */
     /* border: 1px solid var(--orange); */
     border: 2px solid orange;
@@ -7,11 +7,20 @@ div > button {
     width: 7rem;
     height: 2.5rem;
     font-weight: 600;
-    background-color: transparent;
+    /* background-color: transparent; */
     color: white;
 }
 
 .get__started {
+    margin-top: 1rem;
     margin-right: 2rem;
-    background-color: orange;
+    background-color: #f48915;
+}
+
+.learn__more {
+    background-color: transparent;
+}
+
+.buttons > button:hover {
+    cursor:pointer;
 }

@@ -1,10 +1,11 @@
-import React from 'react'
+// import React from 'react'
 import classes from "./TopDisplaySection.module.css";
 import NavBar from '../NavBar/NavBar';
 import Ad from "../Ad/Ad";
 import TagLine from "../TagLine/TagLine";
 import Numbers from '../Numbers/Numbers';
 import Buttons from '../Buttons/Buttons';
+import HeartRate from '../HeartRate/HeartRate';
 
 const TopDisplaySection = () => {
   return (
@@ -17,7 +18,8 @@ const TopDisplaySection = () => {
             <Buttons />
         </div>
         <div className={classes.right__side}>
-            <h1>Hi</h1>
+            <button>Join Now</button>
+            <HeartRate />
         </div>
       
     </div>

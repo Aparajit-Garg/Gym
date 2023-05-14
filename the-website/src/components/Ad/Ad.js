@@ -5,7 +5,7 @@ const Ad = () => {
 
     return (
         <div className={classes.__ad}>
-            <div className={classes.__inside_section} style={{left:"8px"}}></div>
+            <div className={classes.__inside_section}></div>
             <span> The best fitness club in the town </span>
         </div>
     );

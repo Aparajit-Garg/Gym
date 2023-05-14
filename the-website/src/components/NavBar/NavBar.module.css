@@ -4,11 +4,10 @@
     justify-content: space-between;
 }
 
-.image {
+.image img {
     width: 10rem;
     height: 3rem;
-    padding-top: 0.6rem;
-    scale: 0.7;
+    /* padding-top: 1rem; */
 }
 
 .navigation > ul {
@@ -17,10 +16,11 @@
     display: flex;
     color: white;
     align-items: center;
-    padding: 2rem 0;
+    /* padding: 1.5rem 1.7rem; */
 }
 
-.navigation > ul > li {
+.navigation > ul > li:hover {
     cursor: pointer;
+    color: orange;
 }
 
