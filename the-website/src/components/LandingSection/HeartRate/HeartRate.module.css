@@ -46,6 +46,27 @@
 }
 
 .calories {
+    background-color: #656565;
+    position: absolute;
     display: flex;
-    flex-direction: ;
+    flex-direction: row;
+    justify-content: space-between;
+    top: 33rem;
+    right: 28rem;
+    gap: 2rem;
+    padding: 1rem;
+    width: fit-content;
+    color: white;
+    border-radius: 5px;
+}
+
+.calories__info { 
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 4rem;
+}
+
+.calories__info > span:first-child {
+    color: #9c9c9c;
 }

@@ -1,9 +1,9 @@
 import React from 'react';
 import classes from './HeartRate.module.css';
-import HeartPNG from '../../assets/heart.png';
-import HeroImage from '../../assets/hero_image.png';
-import HeroImageBack from '../../assets/hero_image_back.png';
-import Calories from "../../assets/calories.png";
+import HeartPNG from '../../../assets/heart.png';
+import HeroImage from '../../../assets/hero_image.png';
+import HeroImageBack from '../../../assets/hero_image_back.png';
+import Calories from "../../../assets/calories.png";
 
 const HeartRate = () => {
 
