@@ -40,7 +40,7 @@ section {
     display: flex;
     flex-direction: column;
     /* gap: 1rem; */
-    background-color: #656565;
+    background-color: var(--caloryCard);
     padding: 2rem;
     text-transform: uppercase;
     gap: 2rem;
@@ -57,7 +57,7 @@ section {
 }
 
 .plans__card:hover {
-    background-color: red;;
+    background: var(--planCard);
     transform: scale(1.1);
 }
 
