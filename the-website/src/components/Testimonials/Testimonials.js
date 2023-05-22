@@ -12,8 +12,6 @@ const Testimonials = () => {
 
     useEffect(() => {
         setReview(testimonialsData[count]);
-        console.log(review);
-        console.log(testimonialsData[0]);
     }, [count]);
 
     return (
@@ -24,26 +22,25 @@ const Testimonials = () => {
                 <span>say about us</span>
                 <span className={classes.review__section}>
                     <span> {review["review"]} </span>
-                    <span className={classes.jj}>
-                        <span>
-                            <span> {review["name"]} </span>
-                            <span> - {review["status"]}</span>
-                        </span>
-                        <span className={classes.arrow}>
-                            <span>
-                                <img src={leftArrow} alt="left arrow pic"/>
-                            </span>
-                            <span>
-                                <img src={rightArrow} alt="right arrow pic" />
-                            </span>
-                        </span>
-                    </span>
-                    
+                    <span className={classes.reviewer__detail}>
+                        <span> {review["name"]} </span>
+                        <span> - {review["status"]}</span>
+                    </span> 
                 </span>
             </div>
             <div className={classes.right__section}>
+                <span className={classes.arrow}>
+                    <span>
+                        <img onClick={()=>count > 0 ? setCount(count - 1) : setCount(2)} src={leftArrow} alt="left arrow pic"/>
+                    </span>
+                    <span>
+                        <img onClick={()=>count < 2 ? setCount(count + 1) : setCount(0)} src={rightArrow} alt="right arrow pic" />
+                    </span>
+                </span>
                 <span>
-
+                    <span></span>
+                    <span></span>
+                    <span><img src={review["image"]} alt="reviewer pic" /></span>
                 </span>
             </div>
             
