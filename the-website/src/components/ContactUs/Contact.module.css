@@ -4,7 +4,7 @@
     position: relative;
 }
 
-hr {
+.line__section {
     border: 2px solid var(--orange);
     left: 2rem;
     width: 10rem;

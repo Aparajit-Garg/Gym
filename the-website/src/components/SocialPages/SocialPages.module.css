@@ -1,0 +1,31 @@
+section {
+    width: vw;
+    height: vh;
+}
+
+hr {
+    width: 100%;
+}
+
+.complete__section {
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+
+.link__section {
+    display: flex;
+    gap: 3rem;
+}
+
+.link__section > a > img {
+    max-width: 2rem;
+    max-height: 2rem;
+}
+
+.gym__logo > a > img {
+    max-width: 9rem;
+    max-height: 5rem;
+}

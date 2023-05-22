@@ -13,6 +13,7 @@ const Contact = () => {
         .then((result) => {
             console.log("Successfull: ", result.text);
             window.alert("Mail sent");
+            form.current.reset();
         }, (error) => {
             console.log("Error: ", error.text);
         });
@@ -20,7 +21,7 @@ const Contact = () => {
 
     return (
         <div className={classes.top__level}>
-            <hr />
+            <hr className={classes.line__section}></hr>
             <div className={classes.join__us}>
                 <span>
                     <span className={classes.tranparent__background}> Ready to </span>

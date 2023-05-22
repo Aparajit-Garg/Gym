@@ -5,6 +5,7 @@ import WhyChooseUs from "./components/WhyChooseUs/WhyChooseUs";
 import Plans from "./components/Plans/Plans";
 import Testimonials from "./components/Testimonials/Testimonials";
 import Contact from "./components/ContactUs/Contact";
+import SocialPages from './components/SocialPages/SocialPages';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Plans />
       <Testimonials />
       <Contact />
+      <SocialPages />
     </div>
   );
 }
