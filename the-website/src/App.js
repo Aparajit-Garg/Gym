@@ -3,7 +3,8 @@ import TopDisplaySection from "./components/LandingSection/TopDisplaySection/Top
 import Programs from "./components/Programs/Programs";
 import WhyChooseUs from "./components/WhyChooseUs/WhyChooseUs";
 import Plans from "./components/Plans/Plans";
-
+import Testimonials from "./components/Testimonials/Testimonials";
+// import Contact from "./components/ContactUs/Contact";
 
 function App() {
   return (
@@ -12,6 +13,8 @@ function App() {
       <Programs />
       <WhyChooseUs />
       <Plans />
+      <Testimonials />
+      {/* <Contact /> */}
     </div>
   );
 }
