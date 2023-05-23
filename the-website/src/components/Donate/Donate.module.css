@@ -1,0 +1,21 @@
+
+
+.donation {
+    background-color: cyan;
+}
+
+.donation > div:first-child {
+    right: 6rem;
+    position: absolute;
+    margin: 4rem;
+}
+
+.donation > div:first-child > button {
+    all: unset;
+    background-color: white;
+    color: var(--orange);
+    font-weight: 700;
+    padding: 1rem;
+    cursor: pointer;
+}
+

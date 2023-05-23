@@ -24,3 +24,6 @@
     color: orange;
 }
 
+.navigation > ul > li > a {
+    all: unset;
+}

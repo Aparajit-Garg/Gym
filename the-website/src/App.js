@@ -6,17 +6,26 @@ import Plans from "./components/Plans/Plans";
 import Testimonials from "./components/Testimonials/Testimonials";
 import Contact from "./components/ContactUs/Contact";
 import SocialPages from './components/SocialPages/SocialPages';
+import Donate from "./components/Donate/Donate";
+import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
+
 
 function App() {
   return (
     <div className={classes.App}>
-      <TopDisplaySection />
-      <Programs />
-      <WhyChooseUs />
-      <Plans />
-      <Testimonials />
-      <Contact />
-      <SocialPages />
+      <Router>
+        <Routes>
+            <Route path="/" element={[<TopDisplaySection />, 
+                                      <Programs />, 
+                                      <WhyChooseUs />, 
+                                      <Plans />, 
+                                      <Testimonials />, 
+                                      <Contact />, 
+                                      <SocialPages />]} />
+
+            <Route path="/buy-me-a-sandwich" element={<Donate />} exact />
+        </Routes>
+      </Router>
     </div>
   );
 }
