@@ -3,12 +3,15 @@ import classes from "./Testimonials.module.css";
 import { testimonialsData } from "../../data/testimonialsData";
 import leftArrow from "../../assets/leftArrow.png";
 import rightArrow from "../../assets/rightArrow.png";
+import { motion } from "framer-motion";
+
 
 const Testimonials = () => {
 
     const [count, setCount] = useState(0);
     const [review, setReview] = useState({});
 
+    const transition = {type: 'spring', duration: 3};
 
     useEffect(() => {
         setReview(testimonialsData[count]);
@@ -20,13 +23,19 @@ const Testimonials = () => {
                 <span>Testimonials</span>
                 <span> what they</span>
                 <span>say about us</span>
-                <span className={classes.review__section}>
+                <motion.span className={classes.review__section}
+                    key={count}
+                    initial={{opacity: 0, x:-100}}
+                    exit={{opacity: 0, x: -100}}
+                    animate={{opacity: 1, x: 0}}
+                    transition= {{...transition, duration: 2}}
+                    >
                     <span> {review["review"]} </span>
                     <span className={classes.reviewer__detail}>
                         <span> {review["name"]} </span>
                         <span> - {review["status"]}</span>
                     </span> 
-                </span>
+                </motion.span>
             </div>
             <div className={classes.right__section}>
                 <span className={classes.arrow}>
@@ -38,9 +47,24 @@ const Testimonials = () => {
                     </span>
                 </span>
                 <span>
-                    <span></span>
-                    <span></span>
-                    <span><img src={review["image"]} alt="reviewer pic" /></span>
+                    <motion.span
+                        initial={{opacity: 0, x:-100}}
+                        whileInView={{opacity: 1, x: 0}}
+                        transition={{...transition, duration: 2}}
+                    ></motion.span>
+                    <motion.span
+                        initial={{opacity: 0, x: 100}}
+                        whileInView={{opacity: 1, x: 0}}
+                        transition={{...transition, duration: 2}}
+                    ></motion.span>
+                    <span>
+                        <motion.img 
+                            key={count}
+                            initial={{opacity: 0, x: 100}}
+                            animate={{opacity: 1, x: 0}}
+                            exit={{opacity: 0, x: -100}}
+                            transition={{...transition, duration: 2}}
+                            src={review["image"]} alt="reviewer pic" /></span>
                 </span>
             </div>
             

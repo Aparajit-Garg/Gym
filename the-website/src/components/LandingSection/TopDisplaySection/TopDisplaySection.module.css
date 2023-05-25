@@ -2,8 +2,8 @@
 
 .top__section {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
+    /* flex-wrap: wrap; */
 }
 
 .left__side {
@@ -29,10 +29,4 @@
     padding: 0.7rem;
     font-weight: 600;
     border: none;
-}
-
-@media screen and (max-width: 768px) {
-    .top__section {
-        flex-direction: column;
-    }
 }
